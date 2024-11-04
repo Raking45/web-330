@@ -3,9 +3,95 @@
   Chapter 1
   Programming Assignment
 
-  Author:
-  Date:
+  Author: Robert King
+  Date:   November 3, 2024 
   Filename:
 */
 
 /* Your CSS goes here */
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#mainContainer {
+  width: 300px;
+  padding: 20px;
+  background: #333;
+  border: 4px double #ffcc00;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px #ffcc00;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  background: #444;
+  border: 2px solid #ffcc00;
+  color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #ffcc00;
+  color: #222;
+  border: 3px outset #222;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff9900;
+}
+
+#characterOutput {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #444;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#characterOutput p {
+  margin: 0;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+#characterOutput b {
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
