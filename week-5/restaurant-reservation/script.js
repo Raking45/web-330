@@ -3,9 +3,9 @@
   Chapter 2
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Robert King
+  Date:   November, 24, 2024
+  Filename: script.js
 */
 
 // Create an in-memory object array for each table in the restaurant
