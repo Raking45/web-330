@@ -9,3 +9,87 @@
 */
 
 /* Add your CSS styles here */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background-color: #292727;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 20px;
+  margin: 50px auto;
+  border-radius: 8px;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  background-color: #d6d6d6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+form label {
+  display: block;
+  margin: 5px;
+  font-weight: 800;
+}
+
+form input {
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #292727;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form input::placeholder {
+  color: #000;
+}
+
+.button {
+  background-color:#292727;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0a5cf5;
+}
+
+#message {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #0799fa;
+}
+
+.info {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  font-size: .7rem;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
