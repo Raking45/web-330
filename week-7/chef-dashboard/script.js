@@ -3,8 +3,8 @@
   Chapter 3
   Programming Assignment
 
-  Author:
-  Date:
+  Author: Robert King
+  Date:   December 8, 2024
   Filename: chefs.js
 */
 
