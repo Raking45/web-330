@@ -3,9 +3,150 @@
   Chapter 4
   Programming Assignment
 
-  Author:
-  Date:
-  Filename:
+  Author: Robert King
+  Date:   December 15, 2024
+  Filename: styles.css
 */
 
 /* Add your styles here */
+:root {
+  --main-color: rgb(248, 248, 248);
+  --main-bg-color: rgba(0, 217, 255, 0.479);
+  --pattern-color: rgba(0, 60, 255, 0.438);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(63, 63, 63);
+}
+
+.form-container {
+  height: 200px;
+  width: 600px;
+  background-color: #999999;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: absolute;
+  top: 50px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 9px rgb(224, 224, 224);
+  outline: 2px solid black;
+  filter: hue-rotate(0deg);
+  background: radial-gradient(
+    circle, var(--main-bg-color) 0%, rgba(0, 0, 0, 0) 95%),
+    linear-gradient(var(--pattern-color) 1px, transparent 1px),
+    linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
+  background-size: cover, 15px 15px, 15px 15px;
+  background-position: center center, center center, center center;
+  border-image: radial-gradient(circle, var(--main-color) 0%, rgba(0, 0, 0, 0) 100%);
+  color: var(--main-color);
+  transition: background-size 0.2s ease-in-out;
+}
+
+.form-container:hover {
+  background-size:
+  cover,
+  10px 10px,
+  10px 10px;
+}
+
+form input {
+  height: 50px;
+  width: 300px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  border-top: 3px solid rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(255, 255, 255);
+  outline: 2px solid black;
+  background-color: rgb(199, 199, 199);
+  margin-right: 20px;
+  padding-left: 5px;
+}
+
+form button {
+  width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  border-top: 3px solid rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(255, 255, 255);
+  outline: 1px solid black;
+  padding-top: 4px;
+  font-size: 1rem;
+  background-color: rgb(58, 58, 58);
+  color: white;
+  cursor: pointer;
+}
+
+#movie-info {
+  height: 300px;
+  width: 600px;
+  background-color: white;
+  position: absolute;
+  top: 225px;
+  border-radius: 12px;
+  color: black;
+  border-top: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+  outline: 2px solid rgb(0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  filter: hue-rotate(0deg);
+  background: radial-gradient(
+    circle, var(--main-bg-color) 0%, rgba(0, 0, 0, 0) 95%),
+    linear-gradient(var(--pattern-color) 1px, transparent 1px),
+    linear-gradient(to right, var(--pattern-color) 1px, transparent 1px);
+  background-size: cover, 15px 15px, 15px 15px;
+  background-position: center center, center center, center center;
+  border-image: radial-gradient(circle, var(--main-color) 0%, rgba(0, 0, 0, 0) 100%);
+  color: var(--main-color);
+  transition: background-size 0.2s ease-in-out;
+}
+
+#movie-info:hover {
+  background-size:
+  cover,
+  10px 10px,
+  10px 10px;
+}
+
+h2  {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+#movie-info {
+  display: none;
+}
+
+#error-message {
+  color: red;
+  background-color: rgba(114, 114, 114, 0.116);
+  position: absolute;
+  display: none;
+  top: 140px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 1.4rem;
+  padding-top: 12px;
+}
